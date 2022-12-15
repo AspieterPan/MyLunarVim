@@ -19,10 +19,14 @@ M.config = function()
 	--------------
 	-- plugin: clever-f.vim
 	-- plugin: hop.nvim
+	-- plugin: lightspeed.nvim
 	-- plugin: vim-matchup
-	map("c", "<C-a>", "<C-b>", { noremap = true })
-	map("", ";", "<CMD>HopChar2<CR>")
-	map("", ",", "<CMD>HopLineStartMW<CR>")
+	-- map("c", "<C-a>", "<C-b>", { noremap = true })
+	-- map("", ";", "<CMD>HopChar2<CR>")
+	map("n", ";", "<Plug>Lightspeed_S")
+	map("n", "gj", "<Plug>Lightspeed_gs")
+	map("n", "gk", "<Plug>Lightspeed_gS")
+	-- map("", ",", "<CMD>HopLineStartMW<CR>")
 
 	--------------
 	-- 标签跳转 --

@@ -22,13 +22,13 @@ M.config = function()
 				require("user.setup.clever-f").setup()
 			end,
 		},
-		{
-			"phaazon/hop.nvim",
-			cmd = "Hop*",
-			config = function()
-				require("user.config.hop").config()
-			end,
-		},
+		-- {
+		-- 	"phaazon/hop.nvim",
+		-- 	cmd = "Hop*",
+		-- 	config = function()
+		-- 		require("user.config.hop").config()
+		-- 	end,
+		-- },
 		{
 			"andymass/vim-matchup",
 			event = "CursorMoved",
@@ -310,6 +310,10 @@ M.config = function()
 		{
 			"fedorenchik/VimCalc3",
 			cmd = { "Calc" },
+		},
+		{
+			"ggandor/lightspeed.nvim",
+			event = "BufRead",
 		},
 	}
 end

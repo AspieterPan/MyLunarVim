@@ -10,7 +10,7 @@ lvim.builtin.bufferline.options.always_show_bufferline = true
 require("user.statusline").config()
 
 lvim.builtin.terminal.active = true
-lvim.builtin.terminal.shell = "/bin/bash"
+lvim.builtin.terminal.shell = "/bin/zsh"
 lvim.builtin.terminal.open_mapping = "<C-Space>" -- ctrl+`
 lvim.builtin.nvimtree.setup.view.mappings.list = {
 	{ key = { "<Tab>" }, action = nil },

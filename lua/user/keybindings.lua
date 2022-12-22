@@ -61,7 +61,7 @@ M.config = function()
 	map("c", "<M-W>", "\\<\\><Left><Left>")
 	map("c", "<M-r>", "\\v")
 	map("c", "<M-c>", "\\C")
-	map("n", "<C-f>", "<CMD>Telescope current_buffer_fuzzy_find<CR>")
+	map("i", "<C-f>", "<CMD>Telescope current_buffer_fuzzy_find<CR>")
 
 	--------------
 	-- 快速编辑 --
@@ -117,6 +117,13 @@ M.config = function()
 	lvim.builtin.which_key.mappings["O"] = { "<CMD>put! =@+<CR>", "Paste Clipboard to Previous Line" }
 	lvim.builtin.which_key.mappings["by"] = { "<CMD>%y +<CR>", "Yank Whole Buffer to Clipboard" }
 	lvim.builtin.which_key.mappings["bp"] = { '<CMD>%d<CR>"+P', "Patse Clipboard to Whole Buffer" }
+	lvim.builtin.which_key.mappings["bw"] = { "<CMD>w<CR>", "save" }
+	lvim.builtin.which_key.mappings["bx"] = { "<CMD>BufferKill<CR>", "BufferKill" }
+	lvim.builtin.which_key.mappings["r"] = {
+    name = "Run",
+    c = { "<CMD>!g++ % -o %< -std=c++11 -g -Wall -v && %< <CR>", "RunCpp" },
+  }
+
 
 	--------------
 	-- 语言服务 --

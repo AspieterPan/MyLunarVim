@@ -315,6 +315,23 @@ M.config = function()
 			"ggandor/lightspeed.nvim",
 			event = "BufRead",
 		},
+		{
+			"iamcco/markdown-preview.nvim",
+			run = "cd app && npm install",
+			ft = "markdown",
+			config = function()
+				vim.g.mkdp_auto_start = 1
+			end,
+		},
+		-- {
+		-- 	"lervag/vimtex",
+		-- 	config = function()
+		-- 		vim.g.vimtex_compiler_method = "xelatex"
+		-- 	end,
+		-- },
+		-- {
+		-- 	"xuhdev/vim-latex-live-preview",
+		-- },
 	}
 end
 

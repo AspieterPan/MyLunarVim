@@ -42,7 +42,7 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
 
 如上，官方的安装脚本会提示你是否需要自动安装依赖，可能会有如下问题:
 
-1. 记得挂梯子 [(✿◡‿◡)](## "真的会谢")
+1. 记得挂梯子 [(✿◡‿◡)]( "真的会谢")
 2. 记得设置 npm 的 prefix 以设置可访问的全局安装路径
 
    ```sh

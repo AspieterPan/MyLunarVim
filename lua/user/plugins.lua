@@ -323,6 +323,23 @@ M.config = function()
 				vim.g.mkdp_auto_start = 1
 			end,
 		},
+		{
+			"Pocco81/DAPInstall.nvim",
+		},
+		{
+			"theHamsta/nvim-dap-virtual-text",
+		},
+		{
+			"mfussenegger/nvim-dap-python",
+		},
+		{
+			"nvim-telescope/telescope-dap.nvim",
+		},
+		{
+			"leoluz/nvim-dap-go",
+			module = "dap-go",
+		},
+		{ "jbyuki/one-small-step-for-vimkind", module = "osv" },
 		-- {
 		-- 	"lervag/vimtex",
 		-- 	config = function()
